@@ -1,5 +1,6 @@
 from Calculators.stdDev import run_stdDEV
 from Calculators.quadEq import run_quadEq
+from Calculators.linEq import run_linEq
 import tkinter as tk
 
 GUI_Main = tk.Tk()
@@ -10,5 +11,7 @@ but_StdDEV.grid(row=0, column=0)
 
 but_quadEq = tk.Button(GUI_Main, text="Quadratic Equation", width=20, command=run_quadEq)
 but_quadEq.grid(row=0, column=1)
+
+but_linEq = tk.Button(GUI_Main, text="Linear Equation", width=20, command=run_linEq)
 
 GUI_Main.mainloop()
