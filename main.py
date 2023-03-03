@@ -13,5 +13,6 @@ but_quadEq = tk.Button(GUI_Main, text="Quadratic Equation", width=20, command=ru
 but_quadEq.grid(row=0, column=1)
 
 but_linEq = tk.Button(GUI_Main, text="Linear Equation", width=20, command=run_linEq)
+but_linEq.grid(row=0, column=2)
 
 GUI_Main.mainloop()

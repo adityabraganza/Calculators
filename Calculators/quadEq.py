@@ -1,6 +1,6 @@
 from math import sqrt
 import tkinter as tk
-from importsCom import isfloat
+from Calculators.importsCom import isfloat
 
 def discr(a, b, c):
     global discriminant
