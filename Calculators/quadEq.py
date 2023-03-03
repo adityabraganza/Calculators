@@ -56,27 +56,23 @@ def findx():
 
     discr(a, b, c)
 
-    if isfloat(a):
-        if isfloat(a) and isfloat(b) and isfloat(c):
+    if isfloat(a) and isfloat(b) and isfloat(c):
 
 
-            if numberSol == 0 or a == 0:
-                valueLabel.config(text="Value of x: Imaginary/None/Error")
+        if numberSol == 0:
+            valueLabel.config(text="Value of x: Imaginary/None/Error")
 
-            elif numberSol == 1:
-                x1 = (
-                    (-b)/(2*a)
-                )
-                valueLabel.config(text="Value of x: " + str(x1))
+        if a == 0:
+            valueLabel.config(text="Error: variable a can not be 0")
 
-            elif numberSol == 2:
-                x1 = (
-                    (-b+(sqrt(b*b-(4*a*c))))/2*a
-                )
-                x2 = (
-                    (-b-(sqrt(b*b-(4*a*c))))/2*a
-                )
-                valueLabel.config(text="Value of x: " + str(x1) + " or " + str(x2))
+        elif numberSol == 1:
+            x1 = (-b)/(2*a)
+            valueLabel.config(text="Value of x: " + str(x1))
+
+        elif numberSol == 2:
+            x1 = ((b*(-1))+(sqrt((b*b)-(4*a*c))))/(2*a)
+            x2 = ((b*(-1))-(sqrt((b*b)-(4*a*c))))/(2*a)
+            valueLabel.config(text="Value of x: " + str(x1) + " or " + str(x2))
 
         else:
             return
