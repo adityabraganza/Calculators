@@ -1,12 +1,6 @@
 from math import sqrt
 import tkinter as tk
-
-def isfloat(num):
-    try:
-        float(num)
-        return True
-    except ValueError:
-        return False
+from importsCom import *
 
 def discr(a, b, c):
     global discriminant
